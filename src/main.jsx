@@ -14,8 +14,10 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home/>
+
       }
-    ]
+    ],
+    errorElement:<div>page not found </div>
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(

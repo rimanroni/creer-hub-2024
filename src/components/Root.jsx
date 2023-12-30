@@ -1,13 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Fotter from './Fotter';
+import Header from './Header';
 
 const Root = () => {
     return (
-        <div className='px-16 mx-auto py-2'>
-             <h2>hello root js </h2>
-             
-            <div className='h-svh'><Outlet/></div>
+        <div className='  mx-auto py-2'>
+              <Header/>
+             <div className='h-svh'><Outlet/></div>
             <Fotter/>
         </div>
     );
