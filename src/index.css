@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* nav a.active{
+body{
+    font-family: 'Manrope', sans-serif;
+}
+nav a.active{
     color: red;
-} */
+}
+
+.careear{
+    color: black;
+}

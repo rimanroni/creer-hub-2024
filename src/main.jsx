@@ -5,6 +5,9 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Root from './components/Root.jsx'
 import Home from './components/Home.jsx'
+import Jobs from './components/Jobs.jsx'
+import Blog from './components/Blog.jsx'
+import ErrorPages from './components/ErrorPages.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,10 +17,17 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home/>
-
-      }
+       },
+       {
+        path:'/applied',
+        element:<Jobs/>
+       },
+       {
+        path:'/blog', 
+        element:<Blog/>
+       }
     ],
-    errorElement:<div>page not found </div>
+    errorElement:<ErrorPages/>
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
